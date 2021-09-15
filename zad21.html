@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            function ob()
+            {
+                var d = parseFloat(d1.value);
+                var x = parseFloat(x1.value);
+                var drabina = Math.sqrt((d*d)+(x*x));
+                var alfa = Math.round(Math.atan(d/x)*180/Math.PI*100)/100;
+                drab.innerHTML+=drabina;
+                al.innerHTML+=alfa;
+            }
+
+        </script>
+        <form>
+        Podaj d=<input type="number" id="d1">
+        Podaj x=<input type="number" id="x1"> <br>
+        <input type="button" onclick="ob()" value="Oblicz"> <br>
+        <div id=drab> Drabina= </div>
+        <div id=al> Alfa= </div>
+        </form>
+    </body>
+</html>
