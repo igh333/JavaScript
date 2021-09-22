@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Przykład nr tutaj wpisz odpowiedni numer oraz nazwisko </title>
+        <script language="JavaScript">
+            function ZSE_Open() {
+                window.location = "https://cke.gov.pl/";}
+            function OKE_Open() {
+                window.location = "https://www.gdansk.pl/";}
+            function steam_Open() {
+                window.location = "https://store.steampowered.com";}
+            function Refresh() {
+                window.location.reload();}
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="przycisk1" value="Strona CKE" onclick="setTimeout(function() {ZSE_Open();}, 4000);">
+            <input type="button" name="przycisk2" value="Strona Gdańska" onclick="setTimeout(function() {OKE_Open();}, 6000);">
+            <input type="button" name="przycisk3" value="Steam" onclick="setTimeout(function() {steam_Open();}, 10000);">
+            <input type="button" name="przycisk3" value="Refresh" onclick="setTimeout(function() {Refresh();}, 8000);">
+            
+        </form>
+    </body>
+</html>

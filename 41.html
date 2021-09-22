@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Przykład nr tutaj wpisz odpowiedni numer oraz nazwisko </title>
+        <script language="JavaScript">
+            function len(){
+                document.write(window.history.length);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="przycisk1" value="Ilość odwiedzonych stron" onclick="len()">
+            <input type="button" name="przycisk2" value="Do przodu" onclick="window.history.forward()">
+            <input type="button" name="przycisk3" value="Cofnij" onclick="window.history.back()">
+            <input type="button" name="przycisk4" value="Cofnij o 2" onclick="window.history.go(-2)">
+            <input type="button" name="przycisk5" value="Refresh" onclick="window.history.go(0)">
+        </form>
+    </body>
+</html>
