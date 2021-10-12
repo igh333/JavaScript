@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <head>
+        <title>Kreator postaci</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="left"></div>
+        <div id="right">
+            <form>
+                <input type="text" value="NICK" id="imie">
+                <select id="kla" onchange="klasy()">
+                    <option value="1">Warrior</option>
+                    <option value="2">Knight</option>
+                    <option value="3">Wanderer</option>
+                    <option value="4">Thief</option>
+                    <option value="5">Bandit</option>
+                    <option value="6">Hunter</option>
+                    <option value="7">Sorcerer</option>
+                    <option value="8">Pyromancer</option>
+                    <option value="9">Cleric</option>
+                    <option value="10">Deprived</option>
+                </select>
+            </form>
+        </div>
+        <div id="mainl">
+            <p>HP <br>
+            Mana <br>
+            Strenght <br>
+            Agility <br>
+            Intelligence <br>
+            Gold <br></p>
+        </div>
+        <div id="mainc">
+            <p id="b"></p>
+        </div>
+        <div id="mainr">
+            <p id="c"></p>
+        </div>
+
+        <script>
+            function klasa(hp,mana,str,ag,inte,gold)
+            {
+                this.hp = hp;
+                this.mana = mana;
+                this.str = str;
+                this.ag = ag;
+                this.inte = inte;
+                this.gold = gold;
+            }
+            var Warrior = new klasa(11,8,13,13,9,9);
+            var Knight = new klasa(14,10,11,11,9,11);
+            var Wanderer = new klasa(10,11,10,14,11,8);
+            var Thief = new klasa(9,11,9,15,12,11);
+            var Bandit = new klasa(12,8,14,9,8,10);
+            var Hunter = new klasa(11,9,12,14,9,9);
+            var Sorcerer = new klasa(8,15,9,11,15,8);
+            var Pyromancer = new klasa(10,12,12,9,10,8);
+            var Cleric = new klasa(11,11,12,8,8,14);
+            var Deprived = new klasa(11,11,11,11,11,11);
+            
+            
+            
+            function eq(nazwa,cena,fiz,mag,stab,dur,wei)
+            {
+                this.nazwa = nazwa;
+                this.cena = cena;
+                this.fiz = fiz;
+                this.mag = mag;
+                this.stab = stab;
+                this.dur = dur;
+                this.wei = wei;
+            }
+            b1 = new eq("Dagger", 15, 140, 105, 26, 200, 0.5);
+            b2 = new eq("Halberd", 10, 275, 207, 26, 200, 6);
+            b3 = new eq("Spear", 21, 200, 150, 26, 180, 3.5);
+            b4 = new eq("Light Crossbow", 19, 205, 207, 0, 150, 3);
+            b5 = new eq("Mace", 7, 170, 218, 30, 250, 4);
+            b6 = new eq("Short Bow", 77, 57, 0, 100, 0.5);
+            b7 = new eq("Battle Axe", 23, 177, 228, 36, 250, 4);
+            b8 = new eq("Lifehunt Scythe", 17, 270, 0, 22, 100, 6);
+            b9 = new eq("Titanite Catch Pole", 11, 187, 217, 26, 600, 6);
+            b10 = new eq("Four-Pronged Plow", 187, 140, 26, 300, 5.5);
+            
+            
+            
+            
+            
+            
+            function klasy(){
+                var a = document.getElementById("kla");
+                var c = a.value;
+                switch(c){
+                    case '1': b.innerHTML=Warrior.hp+"<br>"+Warrior.mana+"<br>"+Warrior.str+"<br>"+Warrior.ag+"<br>"+Warrior.inte+"<br>"+Warrior.gold; left.innerHTML="<img src=1.jpg>"; 
+                    mainr.innerHTML="<img src=eq1.png>";
+                    break;
+                    case '2': b.innerHTML=Knight.hp+"<br>"+Knight.mana+"<br>"+Knight.str+"<br>"+Knight.ag+"<br>"+Knight.inte+"<br>"+Knight.gold; left.innerHTML="<img src=2.jpg>"; 
+                    
+                    break;
+                    case '3': b.innerHTML=Wanderer.hp+"<br>"+Wanderer.mana+"<br>"+Wanderer.str+"<br>"+Wanderer.ag+"<br>"+Wanderer.inte+"<br>"+Wanderer.gold; left.innerHTML="<img src=3.jpg>";
+                    
+                    break;
+                    case '4': b.innerHTML=Thief.hp+"<br>"+Thief.mana+"<br>"+Thief.str+"<br>"+Thief.ag+"<br>"+Thief.inte+"<br>"+Thief.gold; left.innerHTML="<img src=4.jpg>"; 
+                    
+                    break;
+                    case '5': b.innerHTML=Bandit.hp+"<br>"+Bandit.mana+"<br>"+Bandit.str+"<br>"+Bandit.ag+"<br>"+Bandit.inte+"<br>"+Bandit.gold; left.innerHTML="<img src=5.jpg>"; 
+                    
+                    break;
+                    case '6': b.innerHTML=Hunter.hp+"<br>"+Hunter.mana+"<br>"+Hunter.str+"<br>"+Hunter.ag+"<br>"+Hunter.inte+"<br>"+Hunter.gold; left.innerHTML="<img src=6.jpg>";
+                    
+                    break;
+                    case '7': b.innerHTML=Sorcerer.hp+"<br>"+Sorcerer.mana+"<br>"+Sorcerer.str+"<br>"+Sorcerer.ag+"<br>"+Sorcerer.inte+"<br>"+Sorcerer.gold; left.innerHTML="<img src=7.jpg>"; 
+                    
+                    break;
+                    case '8': b.innerHTML=Pyromancer.hp+"<br>"+Pyromancer.mana+"<br>"+Pyromancer.str+"<br>"+Pyromancer.ag+"<br>"+Pyromancer.inte+"<br>"+Pyromancer.gold; left.innerHTML="<img src=8.jpg>"; 
+                    
+                    break;
+                    case '9': b.innerHTML=Cleric.hp+"<br>"+Cleric.mana+"<br>"+Cleric.str+"<br>"+Cleric.ag+"<br>"+Cleric.inte+"<br>"+Cleric.gold; left.innerHTML="<img src=9.jpg>";
+                    
+                    break;
+                    case '10': b.innerHTML=Deprived.hp+"<br>"+Deprived.mana+"<br>"+Deprived.str+"<br>"+Deprived.ag+"<br>"+Deprived.inte+"<br>"+Deprived.gold; left.innerHTML="<img src=10.jpg>"; 
+                    
+                    break;
+                        default: b.innerHTML="Error"; 
+                }
+            }
+        </script>
+    </body>
+</html>

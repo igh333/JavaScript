@@ -1,0 +1,10 @@
+body{margin: 0; overflow: hidden;}
+#mainr{width: 60%; height: 560px; background: rgb(158, 158, 158); float: left;}
+#mainc{width: 20%; height: 560px; background: rgb(158, 158, 158); float: left;}
+#mainl{width: 20%; height: 560px; background: rgb(158, 158, 158); float: left; font-size: 30px;}
+#left{float: left; width: 24%; height: 400px; background: rgb(207, 207, 207);}
+#right{float: left;  width: 76%; height: 400px; background: rgb(138, 138, 138);}
+p{margin-left: 40px;line-height: 65px; padding-top: 60px;}
+#b{margin-left: 80px; font-size: 30px;}
+input{margin-left: 50px;}
+#c{margin-left: 80px; font-size: 30px;}
