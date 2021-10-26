@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <div id="wynik">&nbsp;</div>
+        </div>
+        <div class="flex-container">
+            <div onclick="d1()">1</div>
+            <div onclick="d2()">2</div>
+            <div onclick="d3()">3</div>
+            <div onclick="od()">-</div>
+        </div>
+        <div class="flex-container">
+            <div onclick="d4()">4</div>
+            <div onclick="d5()">5</div>
+            <div onclick="d6()">6</div>
+            <div onclick="dod()">+</div>
+        </div>
+        <div class="flex-container">
+            <div onclick="d7()">7</div>
+            <div onclick="d8()">8</div>
+            <div onclick="d9()">9</div>
+            <div onclick="mn()">*</div>
+        </div>
+        <div class="flex-container">
+            <div onclick="c1()">C</div>
+            <div onclick="d0()">0</div>
+            <div onclick="r()">=</div>
+            <div onclick="dzi()">/</div>
+        </div>
+    </body>
+
+    <script>
+        function d1(){
+            wynik.innerHTML+=1;
+        }
+        function d2(){
+            wynik.innerHTML+=2;
+        }
+        function d3(){
+            wynik.innerHTML+=3;
+        }
+        function d4(){
+            wynik.innerHTML+=4;
+        }
+        function d5(){
+            wynik.innerHTML+=5;
+        }
+        function d6(){
+            wynik.innerHTML+=6;
+        }
+        function d7(){
+            wynik.innerHTML+=7;
+        }
+        function d8(){
+            wynik.innerHTML+=8;
+        }
+        function d9(){
+            wynik.innerHTML+=9;
+        }
+        function d0(){
+            wynik.innerHTML+=0;
+        }
+        function c1(){
+            wynik.innerHTML="&nbsp;";
+        }
+        var w = 0;
+        var d = 0;
+        var o = 0;
+        var m = 0;
+        var i = 0;
+        var re = 0;
+        function dod(){
+
+            wynik.innerHTML="+";
+        }
+        function od(){
+            wynik.innerHTML="-";
+        }
+        function mn(){
+            wynik.innerHTML="*";
+        }
+        function dzi(){
+            wynik.innerHTML="/";
+        }
+        function r(){
+
+        }
+    </script>
+</html>
