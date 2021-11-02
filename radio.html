@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <style>
+        #a{margin-left: 20px; margin-right: 20px; margin-top: 15px;}
+        #b{margin-left: 20px; margin-right: 20px; margin-top: 15px;}
+        #d{margin-left: 20px; margin-right: 20px; margin-top: 15px;} 
+        table{margin-top: 100px; border-color: white;}
+    </style>
+</head>
+<body>
+    <form>
+        <center>
+        Cena:<br><input type="number" id="c"><br>
+        Ilość:<br><input type="number" id="i"><br>
+        
+            <input type="radio" name="r" id="a">
+            <input type="radio" name="r" id="b">
+            <input type="radio" name="r" id="d"><br>
+            <p>5%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</p>
+            <input type="button" onclick="e(r)" value="Oblicz">
+        </center>
+    </form>
+    <center>
+        <table id="t">
+            <tr>
+                <td id="k1">
+                </td>
+            </tr>
+        </table>
+    </center>
+
+
+    <script>
+        function e(r){
+            document.getElementById("t").style.border = "2px solid black";
+            var wynik = c.value*i.value;
+            if(r[0].checked){wynik*=0.95}
+            if(r[1].checked){wynik*=0.9}
+            if(r[2].checked){wynik*=0.8}
+        k1.innerHTML=wynik;
+        }
+        
+    </script>
+    
+</body>
+</html>
